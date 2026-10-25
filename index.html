@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ddembe James | Official Business</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;scroll-behavior:smooth}
+body{background:#f8f9fa;color:#222;line-height:1.6}
+.navbar{display:flex;justify-content:space-between;align-items:center;background:#0a1931;color:white;padding:15px 8%;position:fixed;width:100%;top:0;z-index:1000}
+.logo{font-weight:800;font-size:20px;letter-spacing:1px}
+.nav-links{list-style:none;display:flex;gap:25px}
+.nav-links a{color:white;text-decoration:none;font-weight:500}
+.nav-links a:hover{color:#ffc947}
+.menu-toggle{display:none;font-size:26px;cursor:pointer}
+.hero{height:100vh;background:linear-gradient(rgba(10,25,49,0.85),rgba(10,25,49,0.85)),url('https://images.unsplash.com/photo-1497366216548-37526070297c') center/cover;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;padding:20px}
+.hero h1{font-size:52px;margin-bottom:15px}
+.hero p{font-size:18px;margin-bottom:25px;max-width:700px}
+.btn{background:#ffc947;color:#0a1931;padding:12px 28px;border:none;border-radius:5px;text-decoration:none;font-weight:700;cursor:pointer;display:inline-block;margin:5px}
+.btn-outline{background:transparent;border:2px solid #ffc947;color:#ffc947}
+section{padding:70px 8%}
+.page-header{text-align:center;background:#0a1931;color:white}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;background:#f8f9fa}
+.card{background:white;padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.08);text-align:center;transition:0.3s}
+.card:hover{transform:translateY(-5px)}
+.about-box{display:flex;gap:40px;align-items:center;flex-wrap:wrap;background:white;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.08)}
+.about-box img{border-radius:10px;width:350px;max-width:100%;height:420px;object-fit:cover;border:3px solid #0a1931}
+.contact-container{display:grid;grid-template-columns:2fr 1fr;gap:30px}
+.contact-container form{display:flex;flex-direction:column;gap:15px}
+.contact-container input,.contact-container textarea{padding:12px;border:1px solid #ccc;border-radius:5px;width:100%}
+.contact-info{background:#0a1931;color:white;padding:25px;border-radius:10px;height:fit-content}
+footer{text-align:center;background:#0a1931;color:white;padding:20px}
+#formStatus{margin-top:10px;font-weight:600}
+@media(max-width:768px){
+.nav-links{display:none;flex-direction:column;background:#0a1931;position:absolute;top:60px;right:0;width:220px;padding:20px}
+.nav-links.show{display:flex}
+.menu-toggle{display:block}
+.hero h1{font-size:32px}
+.contact-container{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">DDEMBE JAMES</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+</nav>
+
+<header class="hero" id="home">
+    <h1>Building Value, Creating Future</h1>
+    <p>Professional Business Solutions | Entrepreneurship | Consulting & Investments - By Mr. Ddembe James</p>
+    <div>
+        <a href="#services" class="btn">Explore Services</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </div>
+</header>
+
+<section class="page-header" id="about"><h1>About Mr. Ddembe James</h1></section>
+<section>
+    <div class="about-box">
+        <img src="dembe.jpg" alt="Mr Ddembe James">
+        <div>
+            <h2>Visionary Entrepreneur & Business Consultant</h2><br>
+            <p>Mr. Ddembe James is a Ugandan entrepreneur committed to excellence, integrity, and innovation. With years of experience in business management, supplies, and investment, he provides practical solutions that help individuals and businesses grow.</p><br>
+            <p><strong>Mission:</strong> To empower businesses with professional, affordable, and result-oriented solutions.</p>
+            <p><strong>Vision:</strong> To be a leading brand in business excellence in East Africa.</p><br>
+            <p><strong>Core Values:</strong> Integrity | Professionalism | Excellence | Growth</p><br>
+            <a href="#contact" class="btn">Work With Me</a>
+        </div>
+    </div>
+</section>
+
+<section class="page-header" id="services"><h1>Our Professional Services</h1></section>
+<section class="features">
+    <div class="card"><h3>Business Consulting</h3><p>Strategic planning, business registration and growth advice for startups and SMEs.</p></div>
+    <div class="card"><h3>Investment Guidance</h3><p>Smart investment opportunities, financial literacy and capital management.</p></div>
+    <div class="card"><h3>General Supplies</h3><p>Reliable supply of quality goods and services to organizations and individuals.</p></div>
+    <div class="card"><h3>Entrepreneurship Training</h3><p>Mentoring and training young entrepreneurs to build sustainable businesses.</p></div>
+    <div class="card"><h3>Marketing & Branding</h3><p>Helping your business get seen, trusted, and chosen in the competitive market.</p></div>
+    <div class="card"><h3>Project Management</h3><p>Professional execution of business projects from start to finish.</p></div>
+</section>
+
+<section class="page-header" id="contact"><h1>Contact Me</h1></section>
+<section class="contact-container">
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Full Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus"></p>
+    </form>
+    <div class="contact-info">
+        <h3>Get In Touch</h3><br>
+        <p><strong>Phone:</strong> +256 704 089231</p><br>
+        <p><strong>Email:</strong> ddembe.james@email.com</p><br>
+        <p><strong>Location:</strong> Kampala, Uganda</p><br>
+        <p><strong>Working Hours:</strong> Mon - Sat, 8am - 6pm</p>
+    </div>
+</section>
+
+<footer><p>&copy; 2026 Mr. Ddembe James. All Rights Reserved | Designed for Excellence</p></footer>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+menuToggle.addEventListener('click', () => { navLinks.classList.toggle('show'); });
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => { navLinks.classList.remove('show'); });
+});
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const status = document.getElementById('formStatus');
+    status.style.color = 'green';
+    status.textContent = 'Thank you! Your message has been sent to Mr. Ddembe James. He will contact you soon.';
+    contactForm.reset();
+});
+</script>
+
+</body>
+</html>
